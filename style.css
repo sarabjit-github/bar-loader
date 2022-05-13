@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Please Read "Readme.md" file if wanna change something */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #010101;
+}
+
+.bar {
+  width: 2rem;
+  height: 10rem;
+  animation: barLoader 1.2s linear infinite;
+  display: inline-block;
+  transform-origin: bottom;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+.bar:not(:last-child) {
+  margin-right: 0.2rem;
+}
+
+@keyframes barLoader {
+  0%,
+  50%,
+  100% {
+    background: rgb(236, 255, 30);
+  }
+
+  0%,
+  100% {
+    transform: scaleY(0.1);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    transform: scaleY(1);
+    filter: hue-rotate(360deg);
+  }
+}
