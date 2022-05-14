@@ -1,5 +1,7 @@
 # Bar loader animation using only HTML and CSS.
 
+Live Demo : https://sarabjit-github.github.io/bar-loader/
+
 ## To make Custom Theme Loader
 
 If your website has a Theme and you want to give the theme color in "Loader" then following these steps:
